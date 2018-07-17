@@ -19,7 +19,7 @@ script:
   - docker push $DOCKER_IMAGE_NAME:$dockertag
 env:
   global:
-    - DOCKER_IMAGE_NAME=Juicymo/drone-capistrano
+    - DOCKER_IMAGE_NAME=juicymo/drone-capistrano
     - CI_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
   matrix:
     - VERSION=2.4.2
